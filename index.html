@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Fredoka:wght@300;500;600&family=Nunito+Sans:wght@300;600;800&family=Outfit:wght@300;400;600&family=Poppins:wght@100;200;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="master.css">
+    <title>Matices</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu" onclick="displayMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </div>
+        <div class="menu-list">
+            <svg onclick="document.querySelector('.menu-list').style.display = 'none';" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+            <ul>
+                <a href="#Column">Column Vector</a>
+                <a href="#Row">Row Vector</a>
+                <a href="#Square">Square Matrix</a>
+                <a href="#Diagonal">Diagonal Matrix</a>
+                <a href="#Lower">Lower Triangular</a>
+                <a href="#Upper">Upper Triangular</a>
+                <a href="#Identity">Identity Matrix</a>
+                <a href="#Zero">Zero Matrix</a>
+            </ul>
+        </div>
+        
+        <div class="image-container">
+            <img src="4706224.png" alt="">
+            <div class="info">
+                <h1>Matrices Types</h1>
+                <a href="#Matices">Discover</a>
+            </div>
+        </div>
+
+        <div class="Matices" id="Matices">
+            <div class="container-matrix" id="Column">
+                <div class="matrix matrix1">
+                    <div class="art">
+                        <span>-3</span>
+                        <span>2</span>
+                        <span>-5</span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <h1>Column Vector</h1>
+                    <p>a matrix with one column.</p>
+                </div>
+            </div>
+
+            <div class="container-matrix" id="Row">
+                <div class="matrix matrix2">
+                    <div class="art">
+                        <span>-1</span>
+                        <span>3</span>
+                        <span>-4</span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <h1>Row Vector</h1>
+                    <p>a matrix with one row.</p>
+                </div>
+            </div>
+
+            <div class="container-matrix" id="Square">
+                <div class="matrix matrix3">
+                    <div class="art">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>2</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>3</span>
+                        <span>5</span>
+                        <span>6</span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <h1>Square Matrix</h1>
+                    <p>a matrix with the same number of rows and columns</p>
+                </div>
+            </div>
+
+            <div class="container-matrix" id="Diagonal">
+                <div class="matrix matrix4">
+                    <div class="art">
+                        <span>5</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>3</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>2</span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <h1>Diagonal Matrix</h1>
+                    <p>a matrix in which the entries outside the main diagonal are all zero</p>
+                </div>
+            </div>
+
+            <div class="container-matrix" id="Lower">
+                <div class="matrix matrix5">
+                    <div class="art">
+                        <span>1</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>-1</span>
+                        <span>1</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>2</span>
+                        <span>-5</span>
+                        <span>1</span>
+                        <span>0</span>
+                        <span>-3</span>
+                        <span>8</span>
+                        <span>3</span>
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <h1>Lower Triangular</h1>
+                    <p>a square matrix which all the entries above the main diagonal are zero.</p>
+                </div>
+            </div>
+
+            <div class="container-matrix" id="Upper">
+                <div class="matrix matrix6">
+                    <div class="art">
+                        <span>3</span>
+                        <span>-7</span>
+                        <span>-2</span>
+                        <span>2</span>
+                        <span>0</span>
+                        <span>-2</span>
+                        <span>-1</span>
+                        <span>2</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>-1</span>
+                        <span>1</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>-1</span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <h1>Upper Triangular</h1>
+                    <p>a square matrix which all the entries below the main diagonal are zero.</p>
+                </div>
+            </div>
+
+            <div class="container-matrix" id="Identity">
+                <div class="matrix matrix7">
+                    <div class="art">
+                        <span>1</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>1</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <h1>Identity Matrix</h1>
+                    <p>a matrix which all the entries on the main diagonal are equal to 1 and all other elements are equal to 0.</p>
+                </div>
+            </div>
+
+            <div class="container-matrix" id="Zero">
+                <div class="matrix matrix8">
+                    <div class="art">
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>0</span>
+                    </div>
+                </div>
+                <div class="informations">
+                    <h1>Zero Matrix</h1>
+                    <p>a matrix which all the entries are equal to 0.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const menu = document.querySelector('.menu');
+        const menuList = document.querySelector('.menu-list');
+        function displayMenu() {
+            menuList.style.display = 'block'; 
+        }
+    </script>
+</body>
+
+</html>

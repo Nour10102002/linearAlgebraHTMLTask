@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #391e94;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+    background-color: #93478f;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu svg{
+    position: relative;
+    fill: white;
+}
+
+.menu-list {
+    background-color: #93478fb6;
+    width: 100%;
+    box-shadow: 0 0 15px #1a2f34;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0px;
+    display: none;
+}
+
+.menu-list svg {
+    color: white;
+    cursor: pointer;
+}
+
+.menu-list ul {
+    padding: 20px;
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4 , 1fr);
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-list a {
+    padding: 10px 20px;
+    /* margin: 10px; */
+    height: fit-content;
+    background-color: #d267cc;
+    border: 4px solid white;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.image-container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#93478f, #8312a5, #720b98, #561496, #391e94);
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img{
+    width: 40%;
+    height: fit-content;
+    margin: 3%;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.info h1 {
+    font-size: 100px;
+    text-align: center;
+    margin: 3%;
+    color: white;
+    text-shadow: 0 0 15px #e296de;
+}
+
+.info a {
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #93478f;
+    font-size: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.info a:hover {
+    background-color: #854381;
+}
+
+.info a:active {
+    transform: scale(0.98);
+}
+
+.Matices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-matrix {
+    width: 50%;
+    height: 300px;
+    background-color: #d268cd71;
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: inset 0 0 20px #d268cc , 0 0 15px #1a2f34;
+}
+
+.Matices {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.matrix {
+    width: 60%;
+    height: 100%;
+}
+
+.informations {
+    width: 40%;
+    text-align: center;
+    color: white;
+    margin: 10px 10px;
+}
+
+.informations h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #e296de;
+    text-shadow: 0 0 15px black;
+}
+
+.informations p {
+    font-size: 24px;
+}
+
+.art {
+    height: 90%;
+    background-color: white;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 10px;
+}
+
+.matrix > .art > span {
+    font-size: 40px;
+}
+
+.matrix > .art::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right,black 10%, white 10%,white 90% ,black 10%);
+}
+
+.matrix > .art::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right,black 10%, white 10%,white 90% ,black 10%);
+}
+
+/* start matrix 1 */
+.matrix1 > .art {
+    width: 100px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.matrix1 > .art::after {
+    background-image: linear-gradient(to right,black 20%, white 20%,white 80% ,black 20%);
+}
+
+.matrix1 > .art::before {
+    background-image: linear-gradient(to right,black 20%, white 20%,white 80% ,black 20%);
+}
+/* end matrix 1 */
+
+/* start matrix 2 */
+.matrix2 > .art {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* end matrix 2 */
+
+/* start matrix 3
+   start matrix 4
+   start matrix 7
+   start matrix 8 */
+.matrix3 > .art ,
+.matrix4 > .art ,
+.matrix7 > .art ,
+.matrix8 > .art {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: space-around;
+    align-items: center;
+}
+/* end matrix 3
+   end matrix 4
+   end matrix 7
+   end matrix 8 */
+
+
+/* start matrix 5
+   start matrix 6 */
+.matrix5 > .art ,
+.matrix6 > .art {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    justify-content: space-around;
+    align-items: center;
+}
+/* end matrix 5
+   end matrix 6 */
+
+::-webkit-scrollbar  {
+    width: 20px;
+}  
+
+::-webkit-scrollbar-track {
+    background-color: #e296de;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #93478f;
+    border-radius: 20px;
+}
+
+@media (max-width:1000px) {
+    .image-container {
+        flex-direction: column;
+        justify-content: none;
+        height: 100%;
+    }
+    
+    .image-container img{
+        width: 90%;
+        height: fit-content;
+        margin: 3%;
+    
+    }
+    
+    .info {
+        margin-top: 0;
+    }
+    
+    .info h1 {
+        font-size: 60px;
+        margin: 0;
+    }
+    
+    .info a {
+        padding: 10px;
+        font-size: 25px;
+    }
+    
+    .container-matrix {
+        width: 90%;
+        height: 300px;
+        margin-left: 0px;
+    }
+    
+    .informations h1 {
+        font-size: 25px;
+    }
+    
+    .informations p {
+        font-size: 16px;
+    }
+    
+    .matrix > .art > span {
+        font-size: 30px;
+    }
+
+    .menu-list ul {
+        padding: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+}
